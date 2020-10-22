@@ -9,7 +9,8 @@ on:
   #  - cron: '10 10 */4 * *'
 
   push:
-    branches: [ master ]
+    branches:
+      - master
 
 jobs:
 
