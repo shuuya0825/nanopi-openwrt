@@ -2,7 +2,9 @@
 rm -rf feeds/packages/libs/libcap && svn co https://github.com/openwrt/packages/trunk/libs/libcap feeds/packages/libs/libcap
 sed -i '/enable-jsonc/i\\t--disable-cloud \\' feeds/packages/admin/netdata/Makefile 
 
-cd package/lean/
+cd package/
+git clone https://github.com/destan19/OpenAppFilter.git
+cd lean/
 if [[ `pwd` == *"rk3328"* ]]; then
   rm -rf luci-app-oled/ && git clone https://github.com/NateLol/luci-app-oled
 fi
