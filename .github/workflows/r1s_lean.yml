@@ -1,16 +1,13 @@
 name: r1s Lean版openwrt
 
 on:
-  #push:
-  #  branches: [ master ]
-  #  paths:
-  #    - '.github/workflows/r1s_lean.yml'
-  #schedule:
-  #  - cron: '10 10 */4 * *'
-
   push:
-    branches:
-      - master
+    branches: [ master ]
+    paths:
+      - '.github/workflows/r1s_lean.yml'
+  schedule:
+    - cron: '10 10 */4 * *'
+
 
 jobs:
 
